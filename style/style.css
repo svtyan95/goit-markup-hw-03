@@ -1,0 +1,275 @@
+:root {
+  /* evething-all-colors index.html and portfolio.html*/
+  --web-hover-button-up-down: #2196f3;
+  --Studio-black-000000: #000000;
+  --nav-studio-portfolio-contact: #212121;
+  --nav-address-email-phone-p-: #757575;
+  --main-white-color-h: #ffffff;
+  --header-button-active: #188ce8;
+
+  /* lower-section-navigation  */
+  --nav-backgroud-main: #2f303a;
+
+  /* portfolio */
+  --portfolio-bottons-color: #f5f4fa;
+  --blue-bg-button: #2196f3;
+  --stroke: #eeeeee;
+
+  /* RGBA */
+  --RGBA-down-section-email-phone: rgba(255, 255, 255, 0.6);
+}
+
+/* MAIN STYLES */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-white-color-h);
+  letter-spacing: 0.03em;
+  color: var(--Studio-black-000000);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* NAVIGATION TOP & DOWN : STUDION AND PORTFOLIO */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+}
+
+.logo-web-blue {
+  color: var(--blue-bg-button);
+}
+
+.logo-web-black {
+  color: var(--Studio-black-000000);
+}
+
+/* NAVIGATION DOWN : WHERE STUDIO WHITE COLOR */
+.logo-studio-white {
+  color: var(--main-white-color-h);
+}
+
+/* STUDIO | PORTFOLIO | CONTACT */
+.nav-menu-items {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--nav-studio-portfolio-contact);
+  text-decoration: inherit;
+}
+
+.nav-menu-items:hover,
+.nav-menu-items:focus {
+  color: var(--blue-bg-button);
+}
+
+/* current */
+.nav-menu .current {
+  color: var(--web-hover-button-up-down);
+}
+
+/* address and email everywhere on both pages studio and portfolio */
+
+/* TOP EMAILS AND PHONE  */
+.nav-menu-items-info-top {
+  color: var(--nav-address-email-phone-p-);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: inherit;
+}
+
+/* DOWN EMAILS AND PHONE  */
+.nav-menu-items-info {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--RGBA-down-section-email-phone);
+  text-decoration: inherit;
+  font-style: normal;
+}
+
+.nav-menu-items-info:hover,
+.nav-menu-items-info:focus,
+.nav-menu-items-info-top:hover,
+.nav-menu-items-info-top:focus {
+  color: var(--blue-bg-button);
+}
+
+.nav-menu-items-map {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-white-color-h);
+  text-decoration: inherit;
+  font-style: normal;
+}
+
+.nav-menu-items-map:hover,
+.nav-menu-items-map:focus {
+  color: var(--blue-bg-button);
+}
+
+/* HIDDEN SECTION FOR CEO OPTIMIZATION */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Ефективні рішення для вашого бізнесу */
+.main-header {
+  background-color: var(--nav-backgroud-main);
+}
+
+.main-header-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color-h);
+}
+
+.main-header-button {
+  font-family: inherit;
+  background-color: var(--web-hover-button-up-down);
+  border-radius: 4px;
+  color: var(--main-white-color-h);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.main-header-button:hover {
+  background-color: var(--header-button-active);
+  color: var(--main-white-color-h);
+}
+
+.main-header-button:focus {
+  background-color: var(--header-button-active);
+  color: var(--main-white-color-h);
+}
+
+.main-header-button:active {
+  background-color: var(--header-button-active);
+  color: var(--main-white-color-h);
+}
+
+/* OUR STRONG SIDES SECTION */
+.middle-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--nav-studio-portfolio-contact);
+}
+
+.middle-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--nav-address-email-phone-p-);
+}
+
+/* Чим ми займаємося */
+.header-pictures-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--nav-studio-portfolio-contact);
+}
+
+/* Наша команда */
+.main-team {
+  background-color: var(--portfolio-bottons-color);
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--nav-studio-portfolio-contact);
+}
+
+/* LI - це background colfor for section team  */
+.team-item {
+  background-color: var(--main-white-color-h);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--nav-studio-portfolio-contact);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--nav-address-email-phone-p-);
+}
+
+/* footer of web page */
+footer {
+  background-color: var(--nav-backgroud-main);
+}
+
+/* Портфоліо page stulyes */
+
+.sort-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  border-radius: 4px;
+  color: var(--nav-studio-portfolio-contact);
+  background-color: var(--portfolio-bottons-color);
+}
+
+.sort-btn:hover,
+.sort-btn:active,
+.sort-btn:focus {
+  background-color: var(--web-hover-button-up-down);
+  color: var(--main-white-color-h);
+}
+
+/* gallery photos */
+
+a {
+  list-style-type: none;
+}
+
+.gallery-link {
+  text-decoration: none;
+}
+
+.gallery-head {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--nav-studio-portfolio-contact);
+}
+
+.gallery-txt {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--nav-address-email-phone-p-);
+}
