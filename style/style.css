@@ -66,7 +66,7 @@ h1 {
   width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  outline: 3px solid red;
 }
 
 .oneline {
@@ -87,6 +87,7 @@ h1 {
 
 .nav-menu-items {
   padding-left: 50px;
+  content: 50px;
 }
 
 .nav-menu-list-mail {
