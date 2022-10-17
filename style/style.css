@@ -57,12 +57,16 @@ ul {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .container-top {
   width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  outline: 2px solid red;
 }
 
 .oneline {
@@ -180,9 +184,11 @@ ul {
 }
 
 /* Ефективні рішення для вашого бізнесу */
+
 .main-header {
   background-color: var(--nav-backgroud-main);
-  margin-top: 0;
+  width: 1600px;
+  height: 600px;
 }
 
 .main-header-text {
@@ -192,8 +198,15 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color-h);
+  padding: 200px 452px 30px;
+  width: 696px;
+  height: 120px;
+  text-align: center;
 }
 
+button {
+  margin-top: 0;
+}
 .main-header-button {
   font-family: inherit;
   background-color: var(--web-hover-button-up-down);
@@ -204,6 +217,10 @@ ul {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin-left: 692px;
+  margin-bottom: 280px;
+  width: 216px;
+  height: 50px;
 }
 
 .main-header-button:hover {
@@ -222,31 +239,78 @@ ul {
 }
 
 /* OUR STRONG SIDES SECTION */
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.middle-list {
+  width: 1170px;
+  height: 98px;
+  display: flex;
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
 .middle-header {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--nav-studio-portfolio-contact);
+  text-align: left;
 }
 
 .middle-text {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--nav-address-email-phone-p-);
+  padding-top: 10px;
 }
 
 /* Чим ми займаємося */
+
+h2 {
+  margin: 0;
+}
+
+.header-pictures {
+  width: 1170px;
+  height: 386px;
+  margin-left: 215px;
+  margin-top: 94px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+
 .header-pictures-text {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.whatwedo-list {
+  display: flex;
+  margin: top 94px;
+  gap: 30px;
 }
 
 /* Наша команда */
+
 .main-team {
   background-color: var(--portfolio-bottons-color);
+  margin-left: ;
+  width: 1600px;
+  height: 648px;
 }
 
 .team-header {
@@ -254,11 +318,26 @@ ul {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.team-participants {
+  display: flex;
+  gap: 30px;
+}
+
+.left {
+  margin-left: 215px;
 }
 
 /* LI - це background colfor for section team  */
 .team-item {
   background-color: var(--main-white-color-h);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -266,17 +345,43 @@ ul {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--nav-studio-portfolio-contact);
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--nav-address-email-phone-p-);
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 /* footer of web page */
 footer {
   background-color: var(--nav-backgroud-main);
+  outline: 3px solid green;
+  /* padding-left: 15px;
+  padding-top: 60px; */
+}
+
+.lower-section {
+  width: 1600px;
+  height: 252px;
+}
+
+.lower-list {
+  padding-left: 200px;
+  padding-top: 20px;
+}
+
+.other-webstudio {
+  padding-top: 60px;
+}
+
+.lower-list-itemss {
+  padding-bottom: 8px;
 }
 
 /* Портфоліо page stulyes */
