@@ -64,9 +64,8 @@ h1 {
 
 .container-top {
   width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 3px solid red;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .oneline {
@@ -74,10 +73,10 @@ h1 {
 }
 
 .logo {
-  padding-left: 200px;
+  padding-left: 215px;
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-menu-list {
@@ -87,11 +86,17 @@ h1 {
 
 .nav-menu-items {
   padding-left: 50px;
-  content: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-menu-list-mail {
   padding-left: 344px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-menu-items-info-top {
   padding-top: 32px;
   padding-bottom: 32px;
 }
