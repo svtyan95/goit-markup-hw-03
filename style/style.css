@@ -117,9 +117,6 @@ a {
   padding: 20px;
 }
 
-.navigation {
-}
-
 /* NAVIGATION DOWN : WHERE STUDIO WHITE COLOR */
 .logo-studio-white {
   color: var(--main-white-color-h);
@@ -204,9 +201,6 @@ a {
 
 /* Ефективні рішення для вашого бізнесу */
 
-main {
-}
-
 .main-header {
   background-color: var(--nav-backgroud-main);
   max-width: 1600px;
@@ -273,33 +267,25 @@ h3 {
   margin: 0;
 }
 
-.middle {
+ul {
+  padding-left: 0;
+  margin: 0ch;
+}
+
+.container-middle {
   margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid cornflowerblue;
   max-width: 1170px;
 }
 
 .middle-list {
   display: flex;
-  gap: 30px;
+
 }
 
-.middle-header {
-  padding-bottom: 10px;
-}
-
-.middle-text {
-}
-
-/* .middle-list {
-  width: 1170px;
-  height: 98px;
-  display: flex;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
+.middle-item {
+  flex-basis: ((100% - 90px) / 4)); 
 }
 
 .middle-header {
@@ -308,15 +294,15 @@ h3 {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--nav-studio-portfolio-contact);
-  text-align: left;
+  padding-bottom: 10px;
+ 
 }
 
 .middle-text {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--nav-address-email-phone-p-);
-  padding-top: 10px;
-} */
+}
 
 /* Чим ми займаємося */
 
@@ -324,13 +310,22 @@ h2 {
   margin: 0;
 }
 
+
 .header-pictures {
-  width: 1170px;
-  height: 386px;
-  margin-left: 215px;
+  max-width: 1170px;
+  min-height: 386px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 94px;
-  margin-right: 215px;
   margin-bottom: 94px;
+}
+
+
+.whatwedo-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+
 }
 
 .header-pictures-text {
@@ -340,32 +335,27 @@ h2 {
   color: var(--nav-studio-portfolio-contact);
   display: block;
   text-align: center;
-  padding-bottom: 50px;
-}
-
-.whatwedo-list {
-  display: flex;
-  margin: top 94px;
-  gap: 30px;
 }
 
 /* Наша команда */
 
 .main-team {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-height: 648px;
   background-color: var(--portfolio-bottons-color);
-  margin-left: ;
-  width: 1600px;
-  height: 648px;
+
 }
 
-.team-header {
+.team-header-text{
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
-  text-align: center;
   padding-top: 94px;
   padding-bottom: 50px;
+text-align: center;
 }
 
 .team-participants {
@@ -412,17 +402,25 @@ footer {
 }
 
 .lower-section {
+  margin-right: auto;
+  margin-left: auto;
   width: 1600px;
   height: 252px;
 }
 
-.lower-list {
-  padding-left: 200px;
-  padding-top: 20px;
-}
+
 
 .other-webstudio {
+  max-width: 145px;
+  min-height: 41px;
   padding-top: 60px;
+  padding-left: 215px;
+  padding-right: 1240px;
+}
+
+.lower-list {
+  padding-left: 215px;
+  padding-top: 20px;
 }
 
 .lower-list-itemss {
