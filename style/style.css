@@ -71,7 +71,6 @@ a {
 }
 
 .container-top {
-  /* outline: 3px solid coral; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -240,6 +239,7 @@ button {
   margin-bottom: 280px;
   width: 216px;
   height: 50px;
+  border: 1px solid transparent;
 }
 
 .main-header-button:hover {
@@ -495,10 +495,6 @@ a {
 
 }
 
-.btn-items {
-
-
-}
 
 .filter-sets {
     display: flex;      
