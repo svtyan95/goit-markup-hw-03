@@ -396,9 +396,6 @@ text-align: center;
 /* footer of web page */
 footer {
   background-color: var(--nav-backgroud-main);
-  outline: 3px solid green;
-  /* padding-left: 15px;
-  padding-top: 60px; */
 }
 
 .lower-section {
@@ -473,8 +470,50 @@ a {
 
 /* elements position on PORTFOLIO page */
 
-.filter-sets {
+
+.master-gallery {
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  min-height: 1360px;
+}
+
+.btn-block-properties {
+  min-width: 575px;
+  max-height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.btn-list {
+  padding-bottom: 31px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 8px;
+  justify-content: center;
+
+}
+
+.btn-items {
+
+
+}
+
+.filter-sets {
+    display: flex;      
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.filter-sets-items {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    min-width: 200px;
+}
+
+.sort-btn {
+  min-width: 73px;
+  max-height: 40.11px;
+  padding: 6.3px 25px 6.3px 25px;
+  border: 1px solid transparent;
 }
