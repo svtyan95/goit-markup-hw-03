@@ -269,9 +269,6 @@ button {
   margin-top: 40px;
 }
 
-.centr {
-}
-
 .main-header-button:hover {
   background-color: var(--header-button-active);
   color: var(--main-white-color-h);
@@ -340,6 +337,11 @@ h2 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -354,10 +356,12 @@ h2 {
 
 .whatwedo-list {
   display: flex;
+  gap: 30px;
   /* justify-content: space-between; */
 }
 
 .what-items {
+  gap: 30px;
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
@@ -376,8 +380,8 @@ h2 {
 .main-team {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  min-height: 648px;
+  width: 1600px;
+  padding: 0 15px;
   background-color: var(--portfolio-bottons-color);
 }
 
@@ -386,18 +390,23 @@ h2 {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
+  width: 264px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
-  padding-bottom: 50px;
-  text-align: center;
 }
 
 .team-participants {
   display: flex;
+  margin-top: 50px;
   gap: 30px;
+  justify-content: center;
+  padding-bottom: 94px;
 }
 
-.left {
-  margin-left: 215px;
+.team-item {
+  max-width: 270px;
 }
 
 /* LI - це background colfor for section team  */
@@ -413,16 +422,18 @@ h2 {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--nav-studio-portfolio-contact);
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--nav-address-email-phone-p-);
+}
+
+.role-info {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -432,27 +443,21 @@ footer {
 }
 
 .lower-section {
-  margin-right: auto;
-  margin-left: auto;
   width: 1600px;
-  height: 252px;
-}
-
-.other-webstudio {
-  max-width: 145px;
-  min-height: 41px;
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-down-web {
   padding-left: 215px;
-  padding-right: 1240px;
 }
 
 .lower-list {
-  padding-left: 215px;
-  padding-top: 20px;
+  margin-left: 215px;
+  margin-top: 20px;
 }
 
 .lower-list-itemss {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* Портфоліо page stulyes */
@@ -484,7 +489,12 @@ a {
 .gallery-link {
   text-decoration: none;
 }
-
+.desciption-under {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid var(--stroke);
+  border-right: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--stroke);
+}
 .gallery-head {
   font-weight: 700;
   font-size: 18px;
@@ -503,17 +513,8 @@ a {
 
 .master-gallery {
   margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1170px;
-  height: 1360px;
-}
-
-.btn-block-properties {
-  min-width: 575px;
-  max-height: 57px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1170px;
+  margin-bottom: 94px;
 }
 
 .btn-list {
