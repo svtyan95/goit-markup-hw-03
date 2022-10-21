@@ -21,7 +21,6 @@
 
 /* MAIN STYLES */
 
-
 html {
   box-sizing: border-box;
 }
@@ -31,7 +30,6 @@ html {
 *::after{
   box-sizing: inherit;
 } */
-
 
 body {
   font-family: "Roboto", sans-serif;
@@ -79,7 +77,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: block;
+  display: inline-block;
 }
 
 .container-top {
@@ -111,7 +109,7 @@ a {
 }
 
 .nav-menu-listoneline {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .nav-menu-list {
@@ -124,8 +122,14 @@ a {
   display: block;
 }
 
+.nav-menu-items-info-top {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-menu-items {
-  padding: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* NAVIGATION DOWN : WHERE STUDIO WHITE COLOR */
@@ -218,8 +222,22 @@ a {
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .main-header-text {
   font-weight: 900;
   font-size: 44px;
@@ -227,8 +245,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color-h);
-  display: block;
-  padding: 200px 452px 30px;
   width: 696px;
   height: 120px;
   text-align: center;
@@ -247,11 +263,13 @@ button {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin-left: 692px;
-  margin-bottom: 280px;
-  width: 216px;
-  height: 50px;
+  min-width: 216px;
   border: 1px solid transparent;
+  padding: 10px 32px 10px 32px;
+  margin-top: 40px;
+}
+
+.centr {
 }
 
 .main-header-button:hover {
@@ -288,16 +306,18 @@ ul {
   margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  width: 1200px;
+  padding: 0 15px;
 }
 
 .middle-list {
   display: flex;
-
+  gap: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .middle-item {
-  flex-basis: ((100% - 90px) / 4)); 
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .middle-header {
@@ -306,8 +326,7 @@ ul {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--nav-studio-portfolio-contact);
-  padding-bottom: 10px;
- 
+  margin-bottom: 10px;
 }
 
 .middle-text {
@@ -322,7 +341,6 @@ h2 {
   margin: 0;
 }
 
-
 .header-pictures {
   max-width: 1170px;
   min-height: 386px;
@@ -332,12 +350,10 @@ h2 {
   margin-bottom: 94px;
 }
 
-
 .whatwedo-list {
   display: flex;
   gap: 30px;
   padding-top: 50px;
-
 }
 
 .header-pictures-text {
@@ -357,17 +373,16 @@ h2 {
   max-width: 1600px;
   min-height: 648px;
   background-color: var(--portfolio-bottons-color);
-
 }
 
-.team-header-text{
+.team-header-text {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
   padding-top: 94px;
   padding-bottom: 50px;
-text-align: center;
+  text-align: center;
 }
 
 .team-participants {
@@ -416,8 +431,6 @@ footer {
   width: 1600px;
   height: 252px;
 }
-
-
 
 .other-webstudio {
   max-width: 145px;
@@ -482,7 +495,6 @@ a {
 
 /* elements position on PORTFOLIO page */
 
-
 .master-gallery {
   margin-top: 94px;
   margin-left: auto;
@@ -496,7 +508,6 @@ a {
   max-height: 57px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .btn-list {
@@ -504,19 +515,17 @@ a {
   display: flex;
   gap: 8px;
   justify-content: center;
-
 }
 
-
 .filter-sets {
-    display: flex;      
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .filter-sets-items {
-    flex-basis: calc((100% - 2 * 30px) / 3);
-    min-width: 200px;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  min-width: 200px;
 }
 
 .sort-btn {
