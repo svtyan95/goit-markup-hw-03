@@ -127,6 +127,15 @@ a {
   padding-bottom: 32px;
 }
 
+.line {
+  width: 1600px;
+  height: 0px;
+  left: -5px;
+  top: 94px;
+
+  border: 1px solid #ececec;
+}
+
 .nav-menu-items {
   padding-top: 32px;
   padding-bottom: 32px;
