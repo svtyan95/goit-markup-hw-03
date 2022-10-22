@@ -40,6 +40,7 @@ body {
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
@@ -146,7 +147,7 @@ button {
 }
 
 /* current */
-.nav-menu .current {
+.upper-item .current {
   color: var(--web-hover-button-up-down);
 }
 
@@ -215,6 +216,7 @@ button {
   background-color: var(--nav-backgroud-main);
   padding-top: 200px;
   padding-bottom: 200px;
+  display: flex;
 }
 
 .hero-center {
@@ -223,6 +225,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .main-header-text {
   font-weight: 900;
   font-size: 44px;
@@ -340,7 +343,6 @@ ul {
 /* Наша команда */
 
 .section-team {
-  outline: 2px solid coral;
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: var(--portfolio-bottons-color);
@@ -351,7 +353,9 @@ ul {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
+  display: block;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-max {
   max-width: 1600px;
