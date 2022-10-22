@@ -20,52 +20,47 @@
 </head>
 
 <body>
-  <header class="oneline">
-    <div class="container-top">
-      <nav class="navigation oneline">
-        <a href="#" class="logo oneline"><span class="logo-web-blue">Web</span><span
-            class="logo-web-black">Studio</span></a>
+  <header class="top">
+    <div class="header-container container">
+      <a href="#" class="logo"><span class="logo-web-blue">Web</span><span class="logo-web-black">Studio</span></a>
 
-        <ul class="nav-menu oneline">
-          <li class="nav-menu-list"><a href="./index.html" class="nav-menu-items">Студія</a></li>
-          <li class="nav-menu-list">
+      <nav class="">
+        <ul class="upper-list">
+          <li class="upper-item"><a href="./index.html" class="nav-menu-items">Студія</a></li>
+          <li class="upper-item">
             <a href="#" class="nav-menu-items current">Портфоліо</a>
           </li>
-          <li class="nav-menu-list"><a href="#" class="nav-menu-items">Контакти</a></li>
+          <li class="upper-item"><a href="#" class="nav-menu-items">Контакти</a></li>
         </ul>
       </nav>
-      <div class="right-side-contacts oneline">
-        <ul class="nav-menu oneline">
-          <li class="nav-menu-list-mail">
-            <a href="mailto:info@devstudio.com" class="nav-menu-items-info-top">info@devstudio.com</a>
-          </li>
-          <li class="nav-menu-listoneline tel">
-            <a href="tel:+380961111111" class="nav-menu-items-info-top">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="upper-list right-space">
+        <li class="upper-item">
+          <a href="mailto:info@devstudio.com" class="nav-menu-items-info-top">info@devstudio.com</a>
+        </li>
+        <li class="upper-item">
+          <a href="tel:+380961111111" class="nav-menu-items-info-top">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
   </header>
 
   <main>
-    <section>
-      <div class="master-gallery container">
-        <div class="btn-block-properties">
-          <h1 class="visually-hidden">portfolio of our works</h1>
-          <ul class="btn-list">
-            <li><button type="button" class="sort-btn">Усі</button></li>
+    <section class="hero-main">
+      <div class="container">
+        <h1 class="visually-hidden">portfolio of our works</h1>
+        <ul class="btn-list">
+          <li><button type="button" class="sort-btn">Усі</button></li>
 
-            <li><button type="button" class="sort-btn">Веб-сайти</button></li>
+          <li><button type="button" class="sort-btn">Веб-сайти</button></li>
 
-            <li><button type="button" class="sort-btn">Додатки</button></li>
-            <li><button type="button" class="sort-btn">Дизайн</button></li>
+          <li><button type="button" class="sort-btn">Додатки</button></li>
+          <li><button type="button" class="sort-btn">Дизайн</button></li>
 
-            <li><button type="button" class="sort-btn">Маркетинг</button></li>
-          </ul>
-        </div>
+          <li><button type="button" class="sort-btn">Маркетинг</button></li>
+        </ul>
 
-        <ul class="gallery filter-sets">
-          <li class="filter-sets-items">
+        <ul class="card-set">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/threeladies.jpg" alt="threeladies"
                 width="370" />
               <div class="desciption-under">
@@ -75,7 +70,7 @@
             </a>
           </li>
 
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/basketball.jpg" alt="basketball"
                 width="370" />
               <div class="desciption-under">
@@ -84,7 +79,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/seafood.jpg" alt="seafood" width="370" />
               <div class="desciption-under">
                 <h3 class="gallery-head">Ресторан Seafood</h3>
@@ -92,7 +87,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/headphones.jpg" alt="headphones"
                 width="370" />
               <div class="desciption-under">
@@ -101,7 +96,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/businesscards.jpg" alt="businesscards"
                 width="370" />
               <div class="desciption-under">
@@ -110,7 +105,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/monitor.jpg" alt="monitor" />
               <div class="desciption-under">
                 <h3 class="gallery-head">Inspiration has no Borders</h3>
@@ -118,7 +113,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/magazine.jpg" alt=" magazine" width="370" />
               <div class="desciption-under">
                 <h3 class="gallery-head">Видання Limited Edition</h3>
@@ -126,7 +121,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/lable.jpg" alt="lable" width="370" />
               <div class="desciption-under">
                 <h3 class="gallery-head">Проєкт LAB</h3>
@@ -134,7 +129,7 @@
               </div>
             </a>
           </li>
-          <li class="filter-sets-items">
+          <li class="card-item">
             <a class="gallery-link" href="#"><img src="./images/portfolio/laptop.jpg" alt="laptop" width="370" />
               <div class="desciption-under">
                 <h3 class="gallery-head">Growing Business</h3>
@@ -146,29 +141,31 @@
       </div>
     </section>
   </main>
+  <footer class="lower-section">
+    <div class="container">
+      <a href="#" class="logo-down-web"><span class="logo-web-blue">Web</span><span
+          class="logo-studio-white">Studio</span>
+      </a>
 
-  <footer class="lower-section container">
+      <address class="address-down">
+        <ul class="lower-list">
+          <li class="lower-list-itemss">
+            <a href="https://goo.gl/maps/a7DPcuxKDiNjd1c69" target="_blank" rel="noopener noreferrer nofollow"
+              class="nav-menu-items-map">м.
+              Київ,
+              пр-т
+              Лесі Українки, 26</a>
+          </li>
+          <li class="lower-list-itemss"><a href="mailto:info@devstudio.com"
+              class="nav-menu-items-info">info@example.com></li>
 
-    <a href="#" class="logo logo-down-web"><span class="logo-web-blue">Web</span><span
-        class="logo-studio-white">Studio</span>
-    </a>
-
-    <address>
-      <ul class="lower-list">
-        <li class="lower-list-itemss">
-          <a href="https://goo.gl/maps/a7DPcuxKDiNjd1c69" target="_blank" rel="noopener noreferrer nofollow"
-            class="nav-menu-items-map">м.
-            Київ,
-            пр-т
-            Лесі Українки, 26</a>
-        </li>
-        <li class="lower-list-itemss"><a href="mailto:info@devstudio.com"
-            class="nav-menu-items-info">info@example.com</a></li>
-
-        <li class=""><a href="tel:+380961111111" class="nav-menu-items-info">+38 096 111 11 11</a></li>
-      </ul>
-    </address>
+          <li class=""><a href="tel:+380961111111" class="nav-menu-items-info">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
+    </div>
   </footer>
+
+
 </body>
 
 </html>

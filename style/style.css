@@ -17,6 +17,7 @@
 
   /* RGBA */
   --RGBA-down-section-email-phone: rgba(255, 255, 255, 0.6);
+  --card-set-gap: 30px;
 }
 
 /* MAIN STYLES */
@@ -25,11 +26,11 @@ html {
   box-sizing: border-box;
 }
 
-/* *,
+*,
 *::before,
-*::after{
-  box-sizing: inherit;
-} */
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -38,18 +39,75 @@ body {
   color: var(--Studio-black-000000);
 }
 
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button {
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 1170px;
+}
+
 /* NAVIGATION TOP & DOWN : STUDION AND PORTFOLIO */
+
+.top {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.upper-list {
+  display: flex;
+  gap: 50px;
+}
+
+.right-space {
+  margin-left: auto;
+}
 
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: auto;
 }
 
 .logo-web-blue {
@@ -61,80 +119,6 @@ ul {
 }
 
 /* це вже позицюювання алементів */
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: inline-block;
-}
-
-.container-top {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-}
-
-.oneline {
-  display: flex;
-}
-
-.logo {
-  margin-right: 93px;
-  display: flex;
-  align-items: center;
-}
-
-.right-side-contacts {
-  margin-left: auto;
-}
-
-.nav-menu-list:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-menu-listoneline {
-  margin-left: 50px;
-}
-
-.nav-menu-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-menu-items .logo-web-blue {
-  padding: 32px 0;
-  display: block;
-}
-
-.nav-menu-items-info-top {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.line {
-  width: 1600px;
-  height: 0px;
-  left: -5px;
-  top: 94px;
-
-  border: 1px solid #ececec;
-}
 
 .nav-menu-items {
   padding-top: 32px;
@@ -176,6 +160,8 @@ a {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: inherit;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 /* DOWN EMAILS AND PHONE  */
@@ -227,18 +213,8 @@ a {
 
 .main-header {
   background-color: var(--nav-backgroud-main);
-  max-width: 1600px;
-  max-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
 }
 
 .hero-center {
@@ -259,9 +235,6 @@ h1 {
   text-align: center;
 }
 
-button {
-  margin: 0;
-}
 .main-header-button {
   font-family: inherit;
   background-color: var(--web-hover-button-up-down);
@@ -308,12 +281,8 @@ ul {
   margin: 0ch;
 }
 
-.container-middle {
-  margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
+.middle {
+  padding-top: 94px;
 }
 
 .middle-list {
@@ -341,22 +310,6 @@ ul {
 }
 
 /* Чим ми займаємося */
-
-h2 {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-}
 
 .header-pictures {
   padding-top: 94px;
@@ -386,11 +339,10 @@ img {
 
 /* Наша команда */
 
-.main-team {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  padding: 0 15px;
+.section-team {
+  outline: 2px solid coral;
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: var(--portfolio-bottons-color);
 }
 
@@ -399,23 +351,21 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--nav-studio-portfolio-contact);
-  width: 264px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
+  text-align: center;
 }
-
+.team-max {
+  max-width: 1600px;
+}
 .team-participants {
   display: flex;
-  margin-top: 50px;
   gap: 30px;
-  justify-content: center;
-  padding-bottom: 94px;
+  /* margin-top: 50px; */
+  /* justify-content: center; */
 }
 
 .team-item {
-  max-width: 270px;
+  /* max-width: 270px; */
+  flex-basis: ((100% - 90px) / 4);
 }
 
 /* LI - це background colfor for section team  */
@@ -452,17 +402,25 @@ footer {
 }
 
 .lower-section {
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.address-down {
+  margin-top: 20px;
+}
 .logo-down-web {
-  padding-left: 215px;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* padding-left: 215px; */
 }
 
 .lower-list {
-  margin-left: 215px;
-  margin-top: 20px;
+  /* margin-left: 215px;logo-down-web
+  margin-top: 20px; */
 }
 
 .lower-list-itemss {
@@ -491,10 +449,6 @@ footer {
 
 /* gallery photos */
 
-a {
-  list-style-type: none;
-}
-
 .gallery-link {
   text-decoration: none;
 }
@@ -506,7 +460,7 @@ a {
 }
 .gallery-head {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--nav-studio-portfolio-contact);
@@ -516,32 +470,39 @@ a {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--nav-address-email-phone-p-);
+  margin-top: 4px;
 }
 
 /* elements position on PORTFOLIO page */
 
-.master-gallery {
-  margin-top: 94px;
-  width: 1170px;
-  margin-bottom: 94px;
+.hero-main {
+  padding-top: 80px;
+  padding-bottom: 94px;
 }
 
 .btn-list {
-  margin-bottom: 41px;
+  margin-bottom: 32px;
   display: flex;
   gap: 8px;
   justify-content: center;
 }
 
-.filter-sets {
+/* CARD SET */ /* CARD SET */ /* CARD SET */
+
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin-top: calc(-1 * var(--cardd-set-gap));
+  margin-left: calc(-1 * var(--cardd-set-gap));
 }
 
-.filter-sets-items {
-  flex-basis: calc((100% - 2 * 30px) / 3);
-  min-width: 200px;
+.card-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
 
 .sort-btn {
