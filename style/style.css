@@ -47,7 +47,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
 img {
@@ -106,9 +105,7 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: auto;
+  margin-right: 93px;
 }
 
 .logo-web-blue {
@@ -121,14 +118,15 @@ button {
 
 /* це вже позицюювання алементів */
 
-.nav-menu-items {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 /* NAVIGATION DOWN : WHERE STUDIO WHITE COLOR */
 .logo-studio-white {
   color: var(--main-white-color-h);
+}
+
+.nav-menu-items {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
 }
 
 /* STUDIO | PORTFOLIO | CONTACT */
@@ -163,6 +161,7 @@ button {
   text-decoration: inherit;
   padding-bottom: 32px;
   padding-top: 32px;
+  display: inline-block;
 }
 
 /* DOWN EMAILS AND PHONE  */
@@ -216,14 +215,11 @@ button {
   background-color: var(--nav-backgroud-main);
   padding-top: 200px;
   padding-bottom: 200px;
-  display: flex;
+  text-align: center;
 }
 
 .hero-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .main-header-text {
@@ -236,6 +232,7 @@ button {
   width: 696px;
   height: 120px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .main-header-button {
@@ -485,7 +482,7 @@ footer {
 }
 
 .btn-list {
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -499,8 +496,8 @@ footer {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--cardd-set-gap));
-  margin-left: calc(-1 * var(--cardd-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .card-item {
